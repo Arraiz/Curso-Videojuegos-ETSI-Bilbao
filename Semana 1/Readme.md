@@ -1,1 +1,0 @@
-# Repositorio de la semana 1
