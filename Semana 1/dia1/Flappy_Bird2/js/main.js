@@ -55,7 +55,7 @@ if(spaceKey.isDown==true){
 }
 mueveTuberia();
  
-if(checkOverlap(pajaro,tuberia)){
+if(detectaColision(pajaro,tuberia)){
 
   console.log('COLISION!!!');
   game.state.restart('flappy');
@@ -85,7 +85,7 @@ function pajaroSube(){
   pajaro.position.y=pajaro.position.y-20;
 }
 
-function checkOverlap(spriteA, spriteB) {
+function detectaColision(spriteA, spriteB) {
 
   var boundsA = spriteA.getBounds();
   var boundsB = spriteB.getBounds();
